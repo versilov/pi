@@ -25,7 +25,7 @@ defmodule PI.Mixfile do
   end
 
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false}]
   end
 
   defp description do
@@ -36,7 +36,7 @@ defmodule PI.Mixfile do
 
   defp package do
     [
-      name: :pi,
+      name: :ex_pi,
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Stas Versilov"],
       licenses: ["MIT License"],

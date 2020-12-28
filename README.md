@@ -1,5 +1,7 @@
 # PI
 
+[![hex.pm version](https://img.shields.io/hexpm/v/ex_pi.svg)](https://hex.pm/packages/ex_pi)
+
 Pretty Inspect pi() function for puts-debugging
 
 ## Usage

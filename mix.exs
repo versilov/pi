@@ -3,7 +3,7 @@ defmodule PI.Mixfile do
 
   def project do
     [
-      app: :pi,
+      app: :ex_pi,
       version: "1.0.0",
       elixir: "~> 1.6",
       description: description(),

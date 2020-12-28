@@ -36,8 +36,11 @@ defmodule PI do
 
   def default_options, do: @default_options
 
-  # Gorgeous post_inspect function, with colorful formatting and calling point printing
-  # If no label was given, inspected variable name is used as label.
+  @doc """
+  Gorgeous post_inspect function, with colorful formatting and calling point printing
+  If no label was given, inspected variable name is used as label.
+
+  """
   defmacro pi(object, label \\ nil, options \\ []) do
     do_pi(object, label || Macro.to_string(object), __CALLER__, options)
   end

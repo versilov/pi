@@ -1,0 +1,50 @@
+defmodule PI.Mixfile do
+  use Mix.Project
+
+  def project do
+    [
+      app: :pi,
+      version: "1.0.0",
+      elixir: "~> 1.6",
+      description: description(),
+      build_embedded: Mix.env() == :prod,
+      start_permanent: Mix.env() == :prod,
+      elixirc_paths: elixirc_paths(Mix.env()),
+      package: package(),
+      deps: deps()
+    ]
+  end
+
+  # Configuration for the OTP application
+  #
+  # Type "mix help compile.app" for more information
+  def application do
+    [
+      applications: [:logger]
+    ]
+  end
+
+  defp deps do
+    []
+  end
+
+  defp description do
+    """
+    Pretty Inspect pi() function for those, who love puts debugging.
+    """
+  end
+
+  defp package do
+    [
+      name: :pi,
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Stas Versilov"],
+      licenses: ["MIT License"],
+      links: %{
+        "GitHub" => "https://github.com/versilov/pi"
+      }
+    ]
+  end
+
+  defp elixirc_paths(_), do: ["lib"]
+end

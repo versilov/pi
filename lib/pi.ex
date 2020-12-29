@@ -40,6 +40,12 @@ defmodule PI do
   Gorgeous post_inspect function, with colorful formatting and calling point printing
   If no label was given, inspected variable name is used as label.
 
+  `object` — the value to inspect
+
+  `label` — optional label, if `nil`, variable name or expression will be used as label
+
+  `options` — options of `IO.inspect/2`, like `limit: :infinity`
+
   """
   defmacro pi(object, label \\ nil, options \\ []) do
     do_pi(object, label || Macro.to_string(object), __CALLER__, options)

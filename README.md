@@ -10,8 +10,8 @@ Pretty Inspect pi() function for puts-debugging
   defmodule MyModule do
     use PI
 
-    def func(arg) do
-      arg
+    def func(variable_name) do
+      variable_name
       |> pi()
       |> process_arg()
     end
@@ -24,5 +24,5 @@ Which will output in console, when MyModule.func/1 is called:
 
 ```
 22:15:58 [my_module.ex:6: MyModule.func/1]
-arg: "argument_value"
+variable_name: "argument_value"
 ```

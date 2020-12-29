@@ -4,7 +4,7 @@ defmodule PI.Mixfile do
   def project do
     [
       app: :ex_pi,
-      version: "1.0.1",
+      version: "1.0.2",
       elixir: "~> 1.6",
       description: description(),
       build_embedded: Mix.env() == :prod,

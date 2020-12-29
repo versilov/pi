@@ -2,7 +2,14 @@
 
 [![hex.pm version](https://img.shields.io/hexpm/v/ex_pi.svg)](https://hex.pm/packages/ex_pi)
 
-Pretty Inspect pi() function for puts-debugging
+Pretty Inspect pi() function for puts-sytle debugging
+
+It prints timestamp, file with line and function, from which was called.
+By default inspected expression is used as label.
+The output is colorized.
+Returns inspected value, so can be seamlessly used in pipes.
+
+All these features help to identify easily the place, from which the inspect was called.
 
 ## Usage
 
